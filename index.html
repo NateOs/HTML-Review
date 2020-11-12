@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Just reviewing HTML">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Nate OS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Document</title>
     <!--All Paragraphs are now blue because of this-->
     <style>
@@ -13,7 +17,7 @@
 
 <link rel="stylesheet" href="styles.css">
 </head>
-<body style="background-color: powderblue; text-align: left;">
+<body id="page-body" style="background-color: powderblue; text-align: left;">
     
    <h1>This is HTML and Chapter 1</h1>
    <a href="https://www.w3schools.com">This is a link</a>
@@ -175,13 +179,30 @@
       </div>
 
       <p>My mother has <span style="color:blue;font-weight:bold">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold">dark green</span> eyes.</p>
+   
+      <iframe src="https://www.w3schools.com"  title="Iframe Example"></iframe>
 
+      <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
 
-
-
-
-
+      <h1>Unleash the HTML JS!</h1>
       
+      <p id="demo"></p>
+
+      <p>The meta tag is used to set data about the data, used to give more info to search engnes and the browser</p>
+
+
+
+
+
+
+
+
+
+    <script>
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+
+        document.getElementById("page-body").style.backgroundColor = "beige";
+    </script>
 </body>
 </html>
 
