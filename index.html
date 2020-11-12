@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML Document</title>
+    <!--All Paragraphs are now blue because of this-->
+    <style>
+        p {
+            color:blue
+        }
+    </style>
+
+<link rel="stylesheet" href="styles.css">
 </head>
 <body style="background-color: powderblue; text-align: left;">
     
@@ -19,85 +27,98 @@
     Attributes provide additional information about elements
     Attributes are always specified in the start tag
     Attributes usually come in name/value pairs like: name="value"</pre> 
-<br>
-<pre>Using the alt attribute
-    <img src="img_typo.jpg" alt="Girl with a jacket">
-</pre>
-
-<h3><pre style="font-family: Arial, Helvetica, sans-serif;">Using the style attribute with font-family in line css
-    <p title="I'm a tooltip" style="color:red;">This is a red paragraph, 
-        with a tooltip attribute, hovering will display message</p>
-</pre></h3>
-
-<caption>
-    Chapter Summary with style attribute and blue color
-    <pre style="color: blue;">
-        Chapter Summary
-All HTML elements can have attributes
-The href attribute of <a> specifies the URL of the page the link goes to
-The src attribute of <img> specifies the path to the image to be displayed
-The width and height attributes of <img> provide size information for images
-The alt attribute of <img> provides an alternate text for an image
-The style attribute is used to add styles to an element, such as color, font, size, and more
-The lang attribute of the <html> tag declares the language of the Web page
-The title attribute defines some extra information about an element
+    <br>
+    <pre>Using the alt attribute
+        <img src="img_typo.jpg" alt="Girl with a jacket">
     </pre>
+
+    <h3><pre style="font-family: Arial, Helvetica, sans-serif;">Using the style attribute with font-family in line css
+        <p title="I'm a tooltip" style="color:red;">This is a red paragraph, 
+            with a tooltip attribute, hovering will display message</p>
+    </pre></h3>
+
+    <caption>
+        Chapter Summary with style attribute and blue color
+        <pre style="color: blue;">
+            Chapter Summary
+    All HTML elements can have attributes
+    The href attribute of <a> specifies the URL of the page the link goes to
+    The src attribute of <img> specifies the path to the image to be displayed
+    The width and height attributes of <img> provide size information for images
+    The alt attribute of <img> provides an alternate text for an image
+    The style attribute is used to add styles to an element, such as color, font, size, and more
+    The lang attribute of the <html> tag declares the language of the Web page
+    The title attribute defines some extra information about an element
+        </pre>
+        <hr>
+    </caption>
+
+    <h1 id="C2">Working with Styles and Chapter 2</h1>
+
+    <h2>Bg Color</h2>
+    <p>Just changed the color of the body with style attribute</p>
+    <p style="background-color:tomato; text-align: right;">This is a paragraph with tomato for bg and text alignment to the right.</p>
     <hr>
-</caption>
 
-<h1>Working with Styles and Chapter 2</h1>
+    <h1 style="border: 2px solid dodgerblue;">Chapter 3 on Formatting</h1>
 
-<h2>Bg Color</h2>
-<p>Just changed the color of the body with style attribute</p>
-<p style="background-color:tomato; text-align: right;">This is a paragraph with tomato for bg and text alignment to the right.</p>
-<hr>
+    <p> <strong>
+        <pre>
+            <del><q>this is deleted</q></del> 
+            is a strong 
+            paragraph for <i>emphasis</i> with <em>formatting</em>
+        </pre>
+        </strong>
+        <small>This is some <mark>smaller</mark> text.
+        Note that <em>smaller</em> is highlighted</small>
+    </p>
 
-<h1>Chapter 3 on Formatting</h1>
+    <p>Demonstrating <sub>subscripts</sub> and <sup>superscripts</sup></p>
 
-<p> <strong>
-    <pre>
-        <del><q>this is deleted</q></del> 
-        is a strong 
-        paragraph for <i>emphasis</i> with <em>formatting</em>
-    </pre>
-    </strong>
-    <small>This is some <mark>smaller</mark> text.
-    Note that <em>smaller</em> is highlighted</small>
-</p>
+    <h1>Into Chapter 4 Quotation and Citation</h1>
 
-<p>Demonstrating <sub>subscripts</sub> and <sup>superscripts</sup></p>
+    <h2>using blockquotes is demonstrated below</h2>
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 50 years, WWF has been protecting the future of nature.
+    The world's leading conservation organization,
+    WWF works in 100 countries and is supported by
+    1.2 million members in the United States and
+    close to 5 million globally.
+    </blockquote>
 
-<h1>Into Chapter 4 Quotation and Citation</h1>
+    <p style="background-color: rosybrown;">Another example</p>
+    <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
 
-<h2>using blockquotes is demonstrated below</h2>
-<p>Here is a quote from WWF's website:</p>
-<blockquote cite="http://www.worldwildlife.org/who/index.html">
-For 50 years, WWF has been protecting the future of nature.
-The world's leading conservation organization,
-WWF works in 100 countries and is supported by
-1.2 million members in the United States and
-close to 5 million globally.
-</blockquote>
+    <p>The 
+        <abbr title="World Health Organization">WHO</abbr>
+        was founded in 1948.</p><p>This demonstrates the use of abbr</p>
 
-<p style="background-color: rosybrown;">Another example</p>
-<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+    <p style="color: seagreen;">Displaying contact info with <code>address</code>
+        <address>
+            Written by John Doe.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+            </address>
+    </p>
 
- <p>The 
-     <abbr title="World Health Organization">WHO</abbr>
-      was founded in 1948.</p><p>This demonstrates the use of abbr</p>
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+    <!--This is a comment to show that I know how to comment-->
+    <p>The above is used to <cite>cite</cite> someone's work</p>
 
-<p style="color: seagreen;">Displaying contact info with <code>address</code>
-    <address>
-        Written by John Doe.<br>
-        Visit us at:<br>
-        Example.com<br>
-        Box 564, Disneyland<br>
-        USA
-        </address>
-</p>
+    <!--See!, here's to more commenting!!😛-->
+    <h1 style="border: 2px solid burlywood;">Chapter 5, this chapter title has a border with the tomato color</h1>
+    <div style="background-color:hsl(34, 57%, 70%, 0.5); width: auto; height: 15px">This div is just here to show that I can do colors too, html colors can be done in 3 ways,
+    using HEX, HSLA , or RGB</div>
 
-<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+    <h1 style="color:orange">I don't even know what chapter it is anymore</h1>
 
-<p>The above is used to <cite>cite</cite> someone's work</p>
+    <a src="img1.jpg" alt="This is an image" style="width:50px; height: 50px;">This image is a link</a>
+    
+    <button onclick="document.location='index.html'">This link takes you nowhere</button>
+    <a href="#C2">Jump to Chapter02</a>
 </body>
 </html>
+
